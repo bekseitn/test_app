@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+
   respond_to :html
   respond_to :js 
   # GET /posts
@@ -28,6 +30,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)  
+    @post.user = current_user
     @post.save
     respond_with(@post)
   end

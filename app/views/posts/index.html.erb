@@ -1,8 +1,0 @@
-<%= link_to "New post", new_post_path, remote: true, class: "new-post-button" %>
-
-<div class="my-posts">
-  <% @posts.each do |post| %>
-    <%= render post %>
-    <% end %>
-</div>
-

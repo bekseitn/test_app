@@ -1,0 +1,2 @@
+$('form').hide();
+$('form#edit_#{dom_id(@post)}').replaceWith('#{j render partial: "post", locals: {post: @post}}');
