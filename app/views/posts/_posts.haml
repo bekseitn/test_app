@@ -1,0 +1,7 @@
+= will_paginate @posts, renderer: BootstrapPagination::Rails
+
+%ul.list-group.my-posts
+	- @posts.each do |post|
+		= render post
+
+= will_paginate @posts, renderer: BootstrapPagination::Rails

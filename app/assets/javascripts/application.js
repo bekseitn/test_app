@@ -15,4 +15,16 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+//
+var ready;
 
+ready = function() {
+	$(document).on("click", ".pagination a", function(e){
+	    e.preventDefault();
+	    $.getScript(this.href);
+	});
+};
+
+$(document).ready(ready);
+
+$(document).on('page:load', ready);

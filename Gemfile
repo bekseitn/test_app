@@ -61,6 +61,8 @@ gem 'devise'
 
 gem 'will_paginate'
 
+gem 'will_paginate-bootstrap'
+
 gem 'faker'  
 
 gem 'populator'
