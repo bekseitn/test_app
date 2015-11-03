@@ -1,5 +1,8 @@
 = div_for post do
-  %h3= post.body
-  %ul
-    %li= link_to "Edit post", edit_post_path(post), remote: true
-    %li= link_to "Delete post", post, remote: true, method: :delete
+	%li.list-group-item
+		%strong= post.user.email
+		%p= time_ago_in_words(post.created_at) 
+		%p= post.body
+		%p
+			= link_to "Edit post", edit_post_path(post), remote: true, class: "btn btn-default"
+			= link_to "Delete post", post, remote: true, method: :delete, class: "btn btn-danger"

@@ -53,8 +53,14 @@ end
 
 gem "responders"
 
-gem 'bootstrap-sass', '~> 3.3.5'
+gem "twitter-bootstrap-rails"
 
 gem 'haml'
 
 gem 'devise'
+
+gem 'will_paginate'
+
+gem 'faker'  
+
+gem 'populator'

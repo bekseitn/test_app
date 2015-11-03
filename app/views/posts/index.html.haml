@@ -1,4 +1,7 @@
-= link_to "New post", new_post_path, remote: true, class: "new-post-button"
-.my-posts
-  - @posts.each do |post|
-    = render post
+
+%p= link_to "New post", new_post_path, remote: true, class: "new-post-button btn btn-primary"
+%ul.list-group.my-posts
+	- @posts.each do |post|
+		= render post
+
+= will_paginate @posts

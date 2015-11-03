@@ -10,9 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
-
-
-.list-group.my-posts .post{margin: 10px 0;}
+/* line 19, /home/shaman/test_app/app/assets/stylesheets/application.scss */
+.list-group.my-posts .post {
+  margin: 10px 0;
+}
