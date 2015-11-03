@@ -1,0 +1,9 @@
+<%= div_for post do %>
+
+  <h3><%= post.body %></h3>
+
+  <ul>
+   <li><%= link_to "Edit post", edit_post_path(post), remote: true %></li>
+   <li><%= link_to "Delete post", post, remote: true, method: :delete %></li>
+  </ul>
+<% end %>
