@@ -6,4 +6,7 @@ class User < ActiveRecord::Base
 
   has_many :postss, dependent: :destroy
 
+  include Humanizer
+  require_human_on :create
+  
 end

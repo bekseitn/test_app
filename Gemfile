@@ -66,3 +66,5 @@ gem 'will_paginate-bootstrap'
 gem 'faker'  
 
 gem 'populator'
+
+gem 'humanizer'
